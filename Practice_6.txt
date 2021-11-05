@@ -1,0 +1,34 @@
+1.
+def nested_sum(t):
+	b=0
+	for i in range(len(t)):
+		a=sum(t[i])
+		b+=a
+	return b
+2.
+def cumsum(t):
+	a=[]
+	s=[]
+	for n in range(len(t)):
+		s.append(t[n])
+		a.append(sum(s))
+	return a
+3.
+def middle(t):
+	t.remove(t[0])
+	t.remove(t[len(t)-1]) 
+	return t
+4.
+t=[1,2,3,4,5,6,7,8,9]
+def chop(t):
+	t.remove(t[0])
+	t.remove(t[len(t)-1]) 
+print(chop(t))
+5.
+def Is_sorted(t):
+	for i in range(len(t)):
+		t.sort()
+		if t==t.sort:
+			return True
+		else:
+			return False
